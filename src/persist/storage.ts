@@ -107,8 +107,15 @@ export class SaveStore {
   }
 }
 
-export function exportFile(state: GameState) {
+/** Download the save where allowed and copy it to the clipboard (call from a click handler). */
+export async function exportFile(state: GameState): Promise<string> {
   const env: SaveEnvelope = makeEnvelope(state);
+  const text = JSON.stringify(env);
+  // Start the clipboard write synchronously inside the click so the browser treats it as user-initiated.
+  let clip: Promise<boolean> = Promise.resolve(false);
+  try {
+    if (navigator.clipboard) clip = navigator.clipboard.writeText(text).then(() => true, () => false);
+  } catch { /* clipboard refused */ }
   const blob = new Blob([JSON.stringify(env, null, 1)], { type: 'application/json' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
@@ -116,6 +123,19 @@ export function exportFile(state: GameState) {
   document.body.appendChild(a);
   a.click();
   setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+  const copied = await clip;
+  return copied
+    ? 'Save copied to your clipboard — paste it into Notes to keep it. (Also downloaded where your browser allows.)'
+    : 'Save file downloaded (if your browser allows downloads here).';
+}
+
+/** Read a save pasted as text. */
+export function readPasted(text: string): GameState {
+  try {
+    return readEnvelope(JSON.parse(text));
+  } catch (e) {
+    throw e instanceof SaveError ? e : new SaveError('That text is not a Backroom Empire save');
+  }
 }
 
 export function pickImport(): Promise<GameState> {
@@ -139,14 +159,19 @@ export function pickImport(): Promise<GameState> {
 
 /** Single-tab ownership via the Web Locks API (feature-detected). */
 export function claimTab(onLost: () => void): Promise<boolean> {
-  const locks = (navigator as Navigator & { locks?: LockManager }).locks;
+  let locks: LockManager | undefined;
+  try { locks = (navigator as Navigator & { locks?: LockManager }).locks; } catch { locks = undefined; }
   if (!locks) return Promise.resolve(true);
   return new Promise((resolve) => {
-    locks.request('backroom-empire-owner', { ifAvailable: true }, (lock) => {
-      if (!lock) { resolve(false); return undefined; }
-      resolve(true);
-      return new Promise<void>(() => undefined); // hold for the page lifetime
-    }).catch(() => { resolve(true); onLost(); });
+    try {
+      locks!.request('backroom-empire-owner', { ifAvailable: true }, (lock) => {
+        if (!lock) { resolve(false); return undefined; }
+        resolve(true);
+        return new Promise<void>(() => undefined); // hold for the page lifetime
+      }).catch(() => { resolve(true); onLost(); });
+    } catch {
+      resolve(true); // sandboxed frames may refuse the Locks API; play on without it
+    }
   });
 }
 

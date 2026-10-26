@@ -23,7 +23,8 @@ export interface UiHost {
   prefs(): Prefs;
   setPrefs(p: Prefs): void;
   saveNow(): Promise<string>;
-  exportSave(): void;
+  exportSave(): Promise<string>;
+  importText(text: string): Promise<string>;
   importSave(): Promise<string>;
   newGame(): void;
   continueGame(): void;
@@ -289,7 +290,8 @@ export class Ui {
         <div class="row">
           ${can ? '<button class="btn primary" data-a="continue">Continue</button>' : ''}
           <button class="btn ${can ? '' : 'primary'}" data-a="new">New game</button>
-          <button class="btn" data-a="import">Import save</button>
+          <button class="btn" data-a="import">Import save file</button>
+          <button class="btn" data-a="paste">Paste save</button>
           <button class="btn" data-a="settings">Settings</button>
         </div>
         ${message ? `<p class="fine" style="color:#ffc9a8">${esc(message)}</p>` : ''}
@@ -309,6 +311,26 @@ export class Ui {
         this.showTitle(msg);
       }
       if (act === 'settings') this.showSettings(() => this.showTitle());
+      if (act === 'paste') this.showPaste(() => this.showTitle());
+    });
+  }
+
+  showPaste(back: () => void) {
+    const sc = this.show(`<div class="card"><h2>Paste a save</h2>
+      <p class="note">Paste the text you copied with “Export save”.</p>
+      <textarea id="paste-save" rows="5" style="width:100%;font:inherit;font-size:0.8em" spellcheck="false"></textarea>
+      <div class="row"><button class="btn" data-a="back">Cancel</button><button class="btn primary" data-a="load">Load save</button></div>
+      <p class="note" data-msg></p></div>`);
+    sc.addEventListener('click', async (e) => {
+      const a = (e.target as HTMLElement).closest('[data-a]') as HTMLElement | null;
+      if (!a) return;
+      if (a.dataset.a === 'back') back();
+      if (a.dataset.a === 'load') {
+        const text = (sc.querySelector('#paste-save') as HTMLTextAreaElement).value.trim();
+        const msg = await this.host.importText(text);
+        const m = sc.querySelector('[data-msg]');
+        if (m) m.textContent = msg;
+      }
     });
   }
 
@@ -318,7 +340,8 @@ export class Ui {
       <p class="note">Everything is frozen while this menu is open.</p>
       <div class="row"><button class="btn primary" data-a="resume">Resume</button></div>
       <div class="row"><button class="btn" data-a="save">Save now</button><button class="btn" data-a="export">Export save file</button></div>
-      <div class="row"><button class="btn" data-a="import">Import save</button><button class="btn" data-a="settings">Settings</button></div>
+      <div class="row"><button class="btn" data-a="import">Import save file</button><button class="btn" data-a="paste">Paste save</button></div>
+      <div class="row"><button class="btn" data-a="settings">Settings</button></div>
       <div class="row"><button class="btn" data-a="help">Controls</button><button class="btn danger" data-a="title">Quit to title</button></div>
       <p class="note" data-msg></p></div>`);
     sc.addEventListener('click', async (e) => {
@@ -328,8 +351,9 @@ export class Ui {
       switch (a.dataset.a) {
         case 'resume': this.closeScreen(); this.host.resume(); break;
         case 'save': msg.textContent = await this.host.saveNow(); break;
-        case 'export': this.host.exportSave(); msg.textContent = 'Save file downloaded.'; break;
+        case 'export': msg.textContent = await this.host.exportSave(); break;
         case 'import': msg.textContent = await this.host.importSave(); break;
+        case 'paste': this.showPaste(() => this.showPause()); break;
         case 'settings': this.showSettings(() => this.showPause()); break;
         case 'help': this.showHelp(); break;
         case 'title': await this.host.saveNow(); this.host.toTitle(); break;

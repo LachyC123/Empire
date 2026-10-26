@@ -10,7 +10,7 @@ import { Ui, type UiHost } from './ui/ui';
 import { MoveInput } from './ui/input';
 import { panelAt } from './ui/panels';
 import { Audio } from './audio/sfx';
-import { SaveStore, claimTab, exportFile, loadPrefs, pickImport, savePrefs, type Prefs } from './persist/storage';
+import { SaveStore, claimTab, exportFile, loadPrefs, pickImport, readPasted, savePrefs, type Prefs } from './persist/storage';
 import type { Offer } from './sim/offers';
 import { SaveError } from './sim/save';
 import { Bot } from './debug/bot';
@@ -382,13 +382,29 @@ export class App implements UiHost, WorldHost {
     }
   }
 
-  exportSave() { exportFile(this.sim.state); }
+  exportSave() { return exportFile(this.sim.state); }
+
+  async importText(text: string): Promise<string> {
+    try {
+      this.setSim(readPasted(text));
+      this.mode = 'play';
+      document.body.classList.remove('mode-title');
+      await this.saveNow(true);
+      this.ui.closeScreen();
+      this.resume();
+      this.ui.toast('Save imported.', 'good');
+      return 'Save imported.';
+    } catch (e) {
+      return (e as Error).message;
+    }
+  }
 
   async importSave(): Promise<string> {
     try {
       const state = await pickImport();
       this.setSim(state);
       this.mode = 'play';
+      document.body.classList.remove('mode-title');
       await this.saveNow(true);
       this.ui.closeScreen();
       this.resume();

@@ -12,6 +12,7 @@
     "test": "vitest run",
     "validate:content": "vitest run tests/content.test.ts && python3 -I design/backroom-empire/tools/validate_pack.py",
     "test:browser": "node scripts/browser-check.mjs",
+    "build:single": "node scripts/build-artifact.mjs",
     "check": "npm run typecheck && npm run test && npm run validate:content"
   },
   "devDependencies": {
