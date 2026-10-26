@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-26T17:32:06.335Z",
+  "at": "2026-10-26T17:37:25.093Z",
   "results": [
     {
       "name": "new game starts with $20 and 12+12 prepaid stock",
@@ -9,7 +9,7 @@
     {
       "name": "keyboard walking moves the player",
       "ok": true,
-      "detail": "x 6.50 → 7.42"
+      "detail": "x 6.50 → 7.27"
     },
     {
       "name": "action button offers \"Take blank\" at the shelf",
@@ -64,12 +64,12 @@
     {
       "name": "bundle builds a physical second table and staffs it",
       "ok": true,
-      "detail": "earned to $258, now $12, toasts: Rook is on the way in — they'll take over packing."
+      "detail": "earned to $265, now $49, toasts: Rook is on the way in — they'll take over packing."
     },
     {
-      "name": "line overview explains the forming bottleneck in plain words",
+      "name": "line overview names the real bottleneck in plain words",
       "ok": true,
-      "detail": "Staffed: forming, packing. You still handle handover yourself."
+      "detail": "Your packers can handle 17/min; forming currently supplies 10/min. Speed up forming or add a forming position. You are handling the hatch yourself — a counter hand automates sales."
     },
     {
       "name": "sleeve dispenser installed (equipment tier 1)",
@@ -88,12 +88,12 @@
     },
     {
       "name": "adjoining workshop unlocked through its real requirements",
-      "ok": false,
+      "ok": true,
       "detail": "orders 100"
     },
     {
       "name": "workshop positions staffed by real workers",
-      "ok": false,
+      "ok": true,
       "detail": ""
     },
     {
@@ -104,12 +104,12 @@
     {
       "name": "after a page reload the stored save holds every in-progress job at its exact progress, plus cash and staff",
       "ok": true,
-      "detail": "4 jobs, $324, 4 workers"
+      "detail": "6 jobs, $139, 6 workers"
     },
     {
       "name": "Continue resumes those jobs from where they were (no reset, no duplicate)",
       "ok": true,
-      "detail": "[[\"j2080\",0.4539473684210519],[\"j2082\",0.524561403508771],[\"j2083\",0.3333333333333333],[\"j2084\",0.6388888888888876]]"
+      "detail": "[[\"j3144\",0.8666666666666677],[\"j3146\",0],[\"j3147\",0.6333333333333321],[\"j3149\",0.2055555555555556]]"
     },
     {
       "name": "recovery fixture: no cash and no blank stock",
