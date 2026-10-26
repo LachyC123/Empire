@@ -1,0 +1,165 @@
+{
+  "version": "1.0",
+  "files": [
+    {
+      "path": "BACKROOM_EMPIRE_MASTER_PLAN.md",
+      "bytes": 67866,
+      "sha256": "1e3a48a94a2dc5387367ac0b1182135cc7f713539dc4816626596b242ffefc3c"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 2728,
+      "sha256": "c5e7ac441a895473937c89d4022d215d1e1640e4b996b220770e185f0b8eba73"
+    },
+    {
+      "path": "PACK_VALIDATION.md",
+      "bytes": 814,
+      "sha256": "cc581b9d73e9f14353b261c6c5cd4c2247c72e78c9c83afc5d748501bd153762"
+    },
+    {
+      "path": "PROGRESS.md",
+      "bytes": 348,
+      "sha256": "06c6b875b1cbebe1fb633beb6ef97bc518da2a54040b4674c049a49aa52a9ffa"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3238,
+      "sha256": "573381f25dcba835f8c2cce690a2455cba9dde93dc989912e2f8c6b45b69a721"
+    },
+    {
+      "path": "START_HERE_PROMPT.md",
+      "bytes": 2552,
+      "sha256": "b1d58a6dd4876578a1511e0bcb1708359352bd78ba417fa22cda3708b99cb6c7"
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 1139,
+      "sha256": "18d2aa940f17d662399bc7f125e2d6a67e255fb6ab13f8d22447c30024af913a"
+    },
+    {
+      "path": "data/capers.json",
+      "bytes": 2390,
+      "sha256": "79972ac53b99d17dc6fb32b2e3c70d12a9be4ad2b015626b3ff8f883c3354088"
+    },
+    {
+      "path": "data/economy.json",
+      "bytes": 972,
+      "sha256": "1f7c3b12b3c4e32136b827bce5b951cac2a4a86bb6d27775c58a3215cfcdcaa7"
+    },
+    {
+      "path": "data/events.json",
+      "bytes": 1681,
+      "sha256": "743f29f91b04f9f8433133a9b6a1bb0e8497ce88f7de4989c17820cf207307d5"
+    },
+    {
+      "path": "data/products.json",
+      "bytes": 2635,
+      "sha256": "c86e7c17e870abbd393c6981079fbaaebdbe524cb36e84d025cafa846b51725a"
+    },
+    {
+      "path": "data/properties.json",
+      "bytes": 1293,
+      "sha256": "916eab44c197f8719b1d3cbf8bbc0b0865c2a1f914d472bbe7f967c463d4c941"
+    },
+    {
+      "path": "data/simulation.json",
+      "bytes": 791,
+      "sha256": "24bcd373ce56666a4a4019100655f1cf40786faaeb9c393585af30b660ad31dd"
+    },
+    {
+      "path": "data/upgrades.json",
+      "bytes": 54428,
+      "sha256": "6e1779917a618dd467b8b15a9dfff1bdc77dd81cc56df976d7b813e6122b0307"
+    },
+    {
+      "path": "data/workers.json",
+      "bytes": 2461,
+      "sha256": "ab90f033512cc006754f05a9abc39b3f8303515908c56de7f4ff47978109ed06"
+    },
+    {
+      "path": "docs/01_VISION_AND_PLAYER_LOOP.md",
+      "bytes": 4157,
+      "sha256": "04effd49ba7598be0e8fe83e7086d8044468697dde5fb8f78a87f17a2db9a420"
+    },
+    {
+      "path": "docs/02_FRIENDLY_UI_AND_ONBOARDING.md",
+      "bytes": 6050,
+      "sha256": "6d5bcae5121fd9fca9766db8b8dccd8410b1d312571b3ad69233fbf817e2ddff"
+    },
+    {
+      "path": "docs/03_PRODUCTION_AND_VISIBLE_WORKERS.md",
+      "bytes": 6779,
+      "sha256": "72a4865b2b438b8bb3ad020320362ffe27cccfdf28cf71a148ed645c0c54e032"
+    },
+    {
+      "path": "docs/04_UPGRADES_UNLOCKS_AND_PROPERTIES.md",
+      "bytes": 5380,
+      "sha256": "04c33347d4bcde75d1c46661454d802728b525b12528f045737159a03bb3ecb4"
+    },
+    {
+      "path": "docs/05_PRODUCTS_AND_ECONOMY.md",
+      "bytes": 5995,
+      "sha256": "e5ea8b615bf1d825503790cce86fa4a96670746e8e34fcb34c4a63f8c816c9c9"
+    },
+    {
+      "path": "docs/06_RIVALS_RAIDS_AND_POLICE.md",
+      "bytes": 5491,
+      "sha256": "a077d95ffa9d66ca75fba78cff336f5fde6eb9cb07aaed5435410533df2a3baf"
+    },
+    {
+      "path": "docs/07_HEISTS_CAPERS_AND_LATE_GAME.md",
+      "bytes": 5305,
+      "sha256": "9127ae90d9ef0d648344549b45ad43d19944afbf44f5a0ad78586d4b18a7e13d"
+    },
+    {
+      "path": "docs/08_ART_ANIMATION_AND_SOUND.md",
+      "bytes": 5502,
+      "sha256": "6c4a6ba0cd6ecabb38e2df0ef6ea07e6a984e190da24a9d81c323251842a1ea3"
+    },
+    {
+      "path": "docs/09_ARCHITECTURE_AND_SAVES.md",
+      "bytes": 7552,
+      "sha256": "bef45bc51d7fff5c0bd13c80f251f8fe2ada48d6f4313b74e81d71f2495d33f3"
+    },
+    {
+      "path": "docs/10_CONTENT_AND_CHARACTER_BIBLE.md",
+      "bytes": 4657,
+      "sha256": "db3a601acb4ac26d886c432e0c5131e528cf0b4ed8c159cf9f71a24d5f1254a0"
+    },
+    {
+      "path": "docs/11_IMPLEMENTATION_MILESTONES.md",
+      "bytes": 4039,
+      "sha256": "700a142a6934bc963bb058cb80e96537af80e4bf0279079d46113b1931779c80"
+    },
+    {
+      "path": "docs/12_QA_AND_ACCEPTANCE.md",
+      "bytes": 5053,
+      "sha256": "c7ff094cf874b0a8056b1b8e5671e0848617a9a8eaa17573c8955a94610edf9e"
+    },
+    {
+      "path": "docs/13_TECHNICAL_REFERENCES.md",
+      "bytes": 1526,
+      "sha256": "71dd37e87a30efa608316d1f7bb119036e6be800e81213f94f930aea216b3fe3"
+    },
+    {
+      "path": "templates/ASSET_MANIFEST.md",
+      "bytes": 361,
+      "sha256": "71debb8b3cd948ee8584b4d61ee70d02881902e2c2331df457d37f5e22071a2b"
+    },
+    {
+      "path": "templates/MILESTONE_REVIEW.md",
+      "bytes": 350,
+      "sha256": "c53036b46d10fdab4b63b35d87fa9ca815d15d1d39227aa14d15d67513d813e6"
+    },
+    {
+      "path": "templates/UPGRADE_CONTRACT.md",
+      "bytes": 381,
+      "sha256": "ed79249dadc42f57331d8cb34a359b2f519ef878bb79b1d69b1ff61fe47933b3"
+    },
+    {
+      "path": "tools/validate_pack.py",
+      "bytes": 4137,
+      "sha256": "0a45f6a938d022452784a9b2059c291b4e4fd31b321375da2494febb3deb48e9"
+    }
+  ]
+}

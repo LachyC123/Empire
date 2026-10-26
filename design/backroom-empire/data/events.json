@@ -1,0 +1,65 @@
+{
+  "majorConcurrentLimit": 1,
+  "offlineEvents": false,
+  "minimumActiveRecoverySeconds": 600,
+  "defaultWarningsSeconds": 60,
+  "events": [
+    {
+      "id": "rival_intimidation",
+      "type": "rival",
+      "unlock": "defence_1",
+      "risk": "Small displayed event fee or recoverable encounter",
+      "cashLossCap": 80
+    },
+    {
+      "id": "warehouse_rush",
+      "type": "rival",
+      "unlock": "property_3",
+      "risk": "Only tagged shipment",
+      "cashLossCap": 0
+    },
+    {
+      "id": "equipment_disruption",
+      "type": "rival",
+      "unlock": "defence_2",
+      "risk": "One repairable station pause",
+      "cashLossCap": 120
+    },
+    {
+      "id": "shipment_recovery",
+      "type": "rival",
+      "unlock": "loading_3",
+      "risk": "Specific optional cargo",
+      "cashLossCap": 0
+    },
+    {
+      "id": "police_notice",
+      "type": "police",
+      "unlock": "civic_1",
+      "risk": "Tutorial warning; no loss",
+      "cashLossCap": 0
+    },
+    {
+      "id": "temporary_closure",
+      "type": "police",
+      "unlock": "civic_2",
+      "risk": "One station temporarily closed; recovery task",
+      "cashLossCap": 150
+    },
+    {
+      "id": "cargo_confiscation",
+      "type": "police",
+      "unlock": "civic_3",
+      "risk": "Designated event cargo only",
+      "cashLossCap": 0
+    },
+    {
+      "id": "civic_setback",
+      "type": "police",
+      "unlock": "civic_4",
+      "risk": "Previewed fine capped by current cash and recent earnings",
+      "cashLossCap": 300
+    }
+  ],
+  "protection": "Never lose buildings, research, workers permanently or all stock; no cumulative cash+cargo loss without explicit bounded preview."
+}

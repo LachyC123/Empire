@@ -1,0 +1,13 @@
+first sale at 19.9s
+   80s  Hire assembler (Mina) (cash after $8, 4 sold)
+  236s  Packing speed 1 (cash after $8, 16 sold)
+  403s  Hire packer (Jules) (cash after $3, 31 sold)
+  816s  Second packing table + packer (cash after $10, 75 sold)
+  862s  Forming speed 1 (cash after $20, 83 sold)
+  945s  Sleeve dispenser (equipment 1) (cash after $12, 100 sold)
+ 1339s  Second forming position + assembler (cash after $10, 153 sold)
+ 1548s  Hire counter hand (Dex) (cash after $13, 195 sold)
+ 1875s  Open adjoining workshop (cash after $2, 264 sold)
+ 2044s  Staff workshop bench (cash after $0, 302 sold)
+ 2321s  Staff workshop table (cash after $7, 367 sold)
+final: 2321s, 367 sold, 7 staff, cash $7

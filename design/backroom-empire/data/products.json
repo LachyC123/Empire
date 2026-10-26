@@ -1,0 +1,145 @@
+{
+  "fictionalAbstractProcesses": true,
+  "products": [
+    {
+      "id": "nightglass",
+      "name": "Nightglass",
+      "unlock": null,
+      "inputs": {
+        "blank_stock": 1,
+        "sleeve": 1
+      },
+      "stages": [
+        "form",
+        "package",
+        "handover"
+      ],
+      "seconds": [
+        6,
+        8,
+        2
+      ],
+      "sale": 12,
+      "visual": "glowing token in paper sleeve"
+    },
+    {
+      "id": "velvet_echo",
+      "name": "Velvet Echo",
+      "unlock": "research_1",
+      "inputs": {
+        "soft_stock": 1,
+        "box": 1
+      },
+      "stages": [
+        "assemble",
+        "sort",
+        "box",
+        "handover"
+      ],
+      "seconds": [
+        8,
+        5,
+        8,
+        2
+      ],
+      "sale": 20,
+      "visual": "soft geometric charm in colourful box"
+    },
+    {
+      "id": "suncoil",
+      "name": "Suncoil",
+      "unlock": "research_2",
+      "inputs": {
+        "coil_blank": 1,
+        "case": 1
+      },
+      "stages": [
+        "align",
+        "tune",
+        "encase",
+        "handover"
+      ],
+      "seconds": [
+        10,
+        6,
+        9,
+        3
+      ],
+      "sale": 29,
+      "visual": "miniature fantasy light coil"
+    },
+    {
+      "id": "moonfoam",
+      "name": "Moonfoam",
+      "unlock": "research_3",
+      "inputs": {
+        "foam_token": 1,
+        "box": 1
+      },
+      "stages": [
+        "shape",
+        "set",
+        "trim",
+        "pack",
+        "handover"
+      ],
+      "seconds": [
+        8,
+        12,
+        5,
+        7,
+        3
+      ],
+      "sale": 28,
+      "visual": "coloured puffs from whimsical machine"
+    },
+    {
+      "id": "prism_bloom",
+      "name": "Prism Bloom",
+      "unlock": "research_4",
+      "inputs": {
+        "light_seed": 1,
+        "case": 1
+      },
+      "stages": [
+        "light_loom",
+        "sort",
+        "protect",
+        "handover"
+      ],
+      "seconds": [
+        16,
+        8,
+        10,
+        3
+      ],
+      "sale": 38,
+      "visual": "geometric fantasy ornament"
+    },
+    {
+      "id": "crown_assembly",
+      "name": "Crown Assembly",
+      "unlock": "research_5",
+      "inputs": {
+        "nightglass": 1,
+        "velvet_echo": 1,
+        "carton": 1
+      },
+      "stages": [
+        "combine",
+        "inspect",
+        "carton",
+        "handover"
+      ],
+      "seconds": [
+        8,
+        6,
+        9,
+        4
+      ],
+      "sale": 49,
+      "visual": "mixed premium product set"
+    }
+  ],
+  "costNote": "For composite sets include upstream material/commission and opportunity costs, not only final carton price."
+}

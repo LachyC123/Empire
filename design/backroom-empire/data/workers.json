@@ -1,0 +1,94 @@
+{
+  "workers": [
+    {
+      "id": "assembler",
+      "role": "Form prepared goods",
+      "baseHireCost": 60,
+      "speciality": "forming",
+      "requiresValidTaskAnchor": true,
+      "visibleArrival": true,
+      "maxConcurrentTasks": 1
+    },
+    {
+      "id": "packer",
+      "role": "Package finished units",
+      "baseHireCost": 90,
+      "speciality": "packaging",
+      "requiresValidTaskAnchor": true,
+      "visibleArrival": true,
+      "maxConcurrentTasks": 1
+    },
+    {
+      "id": "runner",
+      "role": "Move real batches between buffers",
+      "baseHireCost": 120,
+      "speciality": "logistics",
+      "requiresValidTaskAnchor": true,
+      "visibleArrival": true,
+      "maxConcurrentTasks": 1
+    },
+    {
+      "id": "stockkeeper",
+      "role": "Manage budgeted stock targets",
+      "baseHireCost": 220,
+      "speciality": "storage",
+      "requiresValidTaskAnchor": true,
+      "visibleArrival": true,
+      "maxConcurrentTasks": 1
+    },
+    {
+      "id": "loader",
+      "role": "Load and hand over order batches",
+      "baseHireCost": 160,
+      "speciality": "loading",
+      "requiresValidTaskAnchor": true,
+      "visibleArrival": true,
+      "maxConcurrentTasks": 1
+    },
+    {
+      "id": "technician",
+      "role": "Install and repair machinery",
+      "baseHireCost": 320,
+      "speciality": "equipment",
+      "requiresValidTaskAnchor": true,
+      "visibleArrival": true,
+      "maxConcurrentTasks": 1
+    },
+    {
+      "id": "quality_specialist",
+      "role": "Perform deliberate premium processing",
+      "baseHireCost": 380,
+      "speciality": "quality",
+      "requiresValidTaskAnchor": true,
+      "visibleArrival": true,
+      "maxConcurrentTasks": 1
+    },
+    {
+      "id": "supervisor",
+      "role": "Manage bounded assignment rules",
+      "baseHireCost": 550,
+      "speciality": "management",
+      "requiresValidTaskAnchor": true,
+      "visibleArrival": true,
+      "maxConcurrentTasks": 1
+    },
+    {
+      "id": "guard",
+      "role": "Protect event-designated objectives",
+      "baseHireCost": 450,
+      "speciality": "defence",
+      "requiresValidTaskAnchor": true,
+      "visibleArrival": true,
+      "maxConcurrentTasks": 1
+    },
+    {
+      "id": "caper_specialist",
+      "role": "Use authored mission abilities",
+      "baseHireCost": 650,
+      "speciality": "capers",
+      "requiresValidTaskAnchor": true,
+      "visibleArrival": true,
+      "maxConcurrentTasks": 1
+    }
+  ]
+}

@@ -1,0 +1,1739 @@
+{
+  "note": "Dependencies reference unlock knowledge; target-specific purchase ranks also validate exact instance. Costs are authored initial hypotheses. All purchase nodes need complete implementation/art.",
+  "nodes": [
+    {
+      "id": "assembly_1",
+      "branch": "assembly",
+      "rank": 1,
+      "scope": "selected_station",
+      "cashCost": 30,
+      "requires": [],
+      "effect": "Shorter pause between forming actions",
+      "visualContract": "Shorter pause between forming actions; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "work_rate_bonus",
+        "additiveRateBonus": 0.15,
+        "minimumCycleSeconds": 1.2,
+        "presentationTier": 1
+      }
+    },
+    {
+      "id": "assembly_2",
+      "branch": "assembly",
+      "rank": 2,
+      "scope": "selected_station",
+      "cashCost": 58,
+      "requires": [
+        "assembly_1"
+      ],
+      "effect": "Improved hand-tool rhythm",
+      "visualContract": "Improved hand-tool rhythm; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "work_rate_bonus",
+        "additiveRateBonus": 0.3,
+        "minimumCycleSeconds": 1.2,
+        "presentationTier": 1
+      }
+    },
+    {
+      "id": "assembly_3",
+      "branch": "assembly",
+      "rank": 3,
+      "scope": "selected_station",
+      "cashCost": 102,
+      "requires": [
+        "assembly_2"
+      ],
+      "effect": "Two-piece tray handling unlocked",
+      "visualContract": "Two-piece tray handling unlocked; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "work_rate_bonus",
+        "additiveRateBonus": 0.45,
+        "minimumCycleSeconds": 1.2,
+        "presentationTier": 2
+      }
+    },
+    {
+      "id": "assembly_4",
+      "branch": "assembly",
+      "rank": 4,
+      "scope": "selected_station",
+      "cashCost": 160,
+      "requires": [
+        "assembly_3"
+      ],
+      "effect": "Better preparation sequence",
+      "visualContract": "Better preparation sequence; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "work_rate_bonus",
+        "additiveRateBonus": 0.6,
+        "minimumCycleSeconds": 1.2,
+        "presentationTier": 2
+      }
+    },
+    {
+      "id": "assembly_5",
+      "branch": "assembly",
+      "rank": 5,
+      "scope": "selected_station",
+      "cashCost": 234,
+      "requires": [
+        "assembly_4"
+      ],
+      "effect": "Parallel small fixture unlocked",
+      "visualContract": "Parallel small fixture unlocked; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "work_rate_bonus",
+        "additiveRateBonus": 0.75,
+        "minimumCycleSeconds": 1.2,
+        "presentationTier": 3
+      }
+    },
+    {
+      "id": "assembly_6",
+      "branch": "assembly",
+      "rank": 6,
+      "scope": "selected_station",
+      "cashCost": 322,
+      "requires": [
+        "assembly_5"
+      ],
+      "effect": "Specialist batch fixture unlocked",
+      "visualContract": "Specialist batch fixture unlocked; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "work_rate_bonus",
+        "additiveRateBonus": 0.9,
+        "minimumCycleSeconds": 1.2,
+        "presentationTier": 3
+      }
+    },
+    {
+      "id": "packaging_1",
+      "branch": "packaging",
+      "rank": 1,
+      "scope": "selected_station",
+      "cashCost": 45,
+      "requires": [],
+      "effect": "Faster fold and press cycle",
+      "visualContract": "Faster fold and press cycle; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "work_rate_bonus",
+        "additiveRateBonus": 0.15,
+        "minimumCycleSeconds": 1.2,
+        "presentationTier": 1
+      }
+    },
+    {
+      "id": "packaging_2",
+      "branch": "packaging",
+      "rank": 2,
+      "scope": "selected_station",
+      "cashCost": 88,
+      "requires": [
+        "packaging_1"
+      ],
+      "effect": "Smoother sleeve feed",
+      "visualContract": "Smoother sleeve feed; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "work_rate_bonus",
+        "additiveRateBonus": 0.3,
+        "minimumCycleSeconds": 1.2,
+        "presentationTier": 1
+      }
+    },
+    {
+      "id": "packaging_3",
+      "branch": "packaging",
+      "rank": 3,
+      "scope": "selected_station",
+      "cashCost": 153,
+      "requires": [
+        "packaging_2"
+      ],
+      "effect": "Two-package tray animation unlocked",
+      "visualContract": "Two-package tray animation unlocked; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "work_rate_bonus",
+        "additiveRateBonus": 0.45,
+        "minimumCycleSeconds": 1.2,
+        "presentationTier": 2
+      }
+    },
+    {
+      "id": "packaging_4",
+      "branch": "packaging",
+      "rank": 4,
+      "scope": "selected_station",
+      "cashCost": 241,
+      "requires": [
+        "packaging_3"
+      ],
+      "effect": "Improved seal rhythm",
+      "visualContract": "Improved seal rhythm; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "work_rate_bonus",
+        "additiveRateBonus": 0.6,
+        "minimumCycleSeconds": 1.2,
+        "presentationTier": 2
+      }
+    },
+    {
+      "id": "packaging_5",
+      "branch": "packaging",
+      "rank": 5,
+      "scope": "selected_station",
+      "cashCost": 351,
+      "requires": [
+        "packaging_4"
+      ],
+      "effect": "Batch packing method unlocked",
+      "visualContract": "Batch packing method unlocked; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "work_rate_bonus",
+        "additiveRateBonus": 0.75,
+        "minimumCycleSeconds": 1.2,
+        "presentationTier": 3
+      }
+    },
+    {
+      "id": "packaging_6",
+      "branch": "packaging",
+      "rank": 6,
+      "scope": "selected_station",
+      "cashCost": 484,
+      "requires": [
+        "packaging_5"
+      ],
+      "effect": "Specialised wrapping module unlocked",
+      "visualContract": "Specialised wrapping module unlocked; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "work_rate_bonus",
+        "additiveRateBonus": 0.9,
+        "minimumCycleSeconds": 1.2,
+        "presentationTier": 3
+      }
+    },
+    {
+      "id": "lanes_1",
+      "branch": "lanes",
+      "rank": 1,
+      "scope": "selected_property",
+      "cashCost": 95,
+      "requires": [],
+      "effect": "Second packaging position",
+      "visualContract": "Second packaging position; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "unlock_distinct_anchor",
+        "anchorDefinition": "lane_module_1",
+        "validateFootprint": true,
+        "workerIncluded": false
+      }
+    },
+    {
+      "id": "lanes_2",
+      "branch": "lanes",
+      "rank": 2,
+      "scope": "selected_property",
+      "cashCost": 185,
+      "requires": [
+        "lanes_1"
+      ],
+      "effect": "Second forming position",
+      "visualContract": "Second forming position; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "unlock_distinct_anchor",
+        "anchorDefinition": "lane_module_2",
+        "validateFootprint": true,
+        "workerIncluded": false
+      }
+    },
+    {
+      "id": "lanes_3",
+      "branch": "lanes",
+      "rank": 3,
+      "scope": "selected_property",
+      "cashCost": 323,
+      "requires": [
+        "lanes_2"
+      ],
+      "effect": "Dedicated runner staging pad",
+      "visualContract": "Dedicated runner staging pad; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "unlock_distinct_anchor",
+        "anchorDefinition": "lane_module_3",
+        "validateFootprint": true,
+        "workerIncluded": false
+      }
+    },
+    {
+      "id": "lanes_4",
+      "branch": "lanes",
+      "rank": 4,
+      "scope": "selected_property",
+      "cashCost": 508,
+      "requires": [
+        "lanes_3"
+      ],
+      "effect": "Third packaging position",
+      "visualContract": "Third packaging position; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "unlock_distinct_anchor",
+        "anchorDefinition": "lane_module_4",
+        "validateFootprint": true,
+        "workerIncluded": false
+      }
+    },
+    {
+      "id": "lanes_5",
+      "branch": "lanes",
+      "rank": 5,
+      "scope": "selected_property",
+      "cashCost": 741,
+      "requires": [
+        "lanes_4"
+      ],
+      "effect": "Parallel product station pad",
+      "visualContract": "Parallel product station pad; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "unlock_distinct_anchor",
+        "anchorDefinition": "lane_module_5",
+        "validateFootprint": true,
+        "workerIncluded": false
+      }
+    },
+    {
+      "id": "lanes_6",
+      "branch": "lanes",
+      "rank": 6,
+      "scope": "selected_property",
+      "cashCost": 1021,
+      "requires": [
+        "lanes_5"
+      ],
+      "effect": "Fourth flexible production position",
+      "visualContract": "Fourth flexible production position; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "unlock_distinct_anchor",
+        "anchorDefinition": "lane_module_6",
+        "validateFootprint": true,
+        "workerIncluded": false
+      }
+    },
+    {
+      "id": "equipment_1",
+      "branch": "equipment",
+      "rank": 1,
+      "scope": "selected_station",
+      "cashCost": 120,
+      "requires": [],
+      "effect": "Sleeve dispenser and lever",
+      "visualContract": "Sleeve dispenser and lever; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "equipment_module",
+        "cycleTimeFactor": 0.95,
+        "batchSize": 1,
+        "requiresMatchingBatchArt": true
+      }
+    },
+    {
+      "id": "equipment_2",
+      "branch": "equipment",
+      "rank": 2,
+      "scope": "selected_station",
+      "cashCost": 234,
+      "requires": [
+        "equipment_1"
+      ],
+      "effect": "Motorised sealer tier",
+      "visualContract": "Motorised sealer tier; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "equipment_module",
+        "cycleTimeFactor": 0.9,
+        "batchSize": 1,
+        "requiresMatchingBatchArt": true
+      }
+    },
+    {
+      "id": "equipment_3",
+      "branch": "equipment",
+      "rank": 3,
+      "scope": "selected_station",
+      "cashCost": 408,
+      "requires": [
+        "equipment_2"
+      ],
+      "effect": "Short belt and tray feeder",
+      "visualContract": "Short belt and tray feeder; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "equipment_module",
+        "cycleTimeFactor": 0.85,
+        "batchSize": 1,
+        "requiresMatchingBatchArt": true
+      }
+    },
+    {
+      "id": "equipment_4",
+      "branch": "equipment",
+      "rank": 4,
+      "scope": "selected_station",
+      "cashCost": 642,
+      "requires": [
+        "equipment_3"
+      ],
+      "effect": "Twin handling module",
+      "visualContract": "Twin handling module; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "equipment_module",
+        "cycleTimeFactor": 0.8,
+        "batchSize": 2,
+        "requiresMatchingBatchArt": true
+      }
+    },
+    {
+      "id": "equipment_5",
+      "branch": "equipment",
+      "rank": 5,
+      "scope": "selected_station",
+      "cashCost": 936,
+      "requires": [
+        "equipment_4"
+      ],
+      "effect": "Carton stacker",
+      "visualContract": "Carton stacker; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "equipment_module",
+        "cycleTimeFactor": 0.75,
+        "batchSize": 2,
+        "requiresMatchingBatchArt": true
+      }
+    },
+    {
+      "id": "equipment_6",
+      "branch": "equipment",
+      "rank": 6,
+      "scope": "selected_station",
+      "cashCost": 1290,
+      "requires": [
+        "equipment_5"
+      ],
+      "effect": "Specialist modular cell",
+      "visualContract": "Specialist modular cell; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "equipment_module",
+        "cycleTimeFactor": 0.7,
+        "batchSize": 3,
+        "requiresMatchingBatchArt": true
+      }
+    },
+    {
+      "id": "carrying_1",
+      "branch": "carrying",
+      "rank": 1,
+      "scope": "selected_worker",
+      "cashCost": 35,
+      "requires": [],
+      "effect": "Larger hand stack",
+      "visualContract": "Larger hand stack; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "carry_capacity",
+        "units": 2,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "carrying_2",
+      "branch": "carrying",
+      "rank": 2,
+      "scope": "selected_worker",
+      "cashCost": 68,
+      "requires": [
+        "carrying_1"
+      ],
+      "effect": "Shoulder satchel",
+      "visualContract": "Shoulder satchel; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "carry_capacity",
+        "units": 3,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "carrying_3",
+      "branch": "carrying",
+      "rank": 3,
+      "scope": "selected_worker",
+      "cashCost": 119,
+      "requires": [
+        "carrying_2"
+      ],
+      "effect": "Small trolley",
+      "visualContract": "Small trolley; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "carry_capacity",
+        "units": 5,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "carrying_4",
+      "branch": "carrying",
+      "rank": 4,
+      "scope": "selected_worker",
+      "cashCost": 187,
+      "requires": [
+        "carrying_3"
+      ],
+      "effect": "Wide trolley",
+      "visualContract": "Wide trolley; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "carry_capacity",
+        "units": 8,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "carrying_5",
+      "branch": "carrying",
+      "rank": 5,
+      "scope": "selected_worker",
+      "cashCost": 273,
+      "requires": [
+        "carrying_4"
+      ],
+      "effect": "Dedicated cart",
+      "visualContract": "Dedicated cart; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "carry_capacity",
+        "units": 12,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "carrying_6",
+      "branch": "carrying",
+      "rank": 6,
+      "scope": "selected_worker",
+      "cashCost": 376,
+      "requires": [
+        "carrying_5"
+      ],
+      "effect": "Specialised pallet cart",
+      "visualContract": "Specialised pallet cart; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "carry_capacity",
+        "units": 18,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "shelving_1",
+      "branch": "shelving",
+      "rank": 1,
+      "scope": "selected_property",
+      "cashCost": 40,
+      "requires": [],
+      "effect": "Extra input shelf",
+      "visualContract": "Extra input shelf; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "buffer_capacity",
+        "units": 16,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "shelving_2",
+      "branch": "shelving",
+      "rank": 2,
+      "scope": "selected_property",
+      "cashCost": 78,
+      "requires": [
+        "shelving_1"
+      ],
+      "effect": "Separate output rack",
+      "visualContract": "Separate output rack; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "buffer_capacity",
+        "units": 24,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "shelving_3",
+      "branch": "shelving",
+      "rank": 3,
+      "scope": "selected_property",
+      "cashCost": 136,
+      "requires": [
+        "shelving_2"
+      ],
+      "effect": "Larger intermediate tray",
+      "visualContract": "Larger intermediate tray; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "buffer_capacity",
+        "units": 36,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "shelving_4",
+      "branch": "shelving",
+      "rank": 4,
+      "scope": "selected_property",
+      "cashCost": 214,
+      "requires": [
+        "shelving_3"
+      ],
+      "effect": "Categorised stock bays",
+      "visualContract": "Categorised stock bays; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "buffer_capacity",
+        "units": 50,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "shelving_5",
+      "branch": "shelving",
+      "rank": 5,
+      "scope": "selected_property",
+      "cashCost": 312,
+      "requires": [
+        "shelving_4"
+      ],
+      "effect": "High-capacity goods rack",
+      "visualContract": "High-capacity goods rack; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "buffer_capacity",
+        "units": 72,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "shelving_6",
+      "branch": "shelving",
+      "rank": 6,
+      "scope": "selected_property",
+      "cashCost": 430,
+      "requires": [
+        "shelving_5"
+      ],
+      "effect": "Visible overflow and order bays",
+      "visualContract": "Visible overflow and order bays; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "buffer_capacity",
+        "units": 100,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "loading_1",
+      "branch": "loading",
+      "rank": 1,
+      "scope": "selected_property",
+      "cashCost": 70,
+      "requires": [],
+      "effect": "Organised handover counter",
+      "visualContract": "Organised handover counter; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "dispatch_batch",
+        "units": 1,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "loading_2",
+      "branch": "loading",
+      "rank": 2,
+      "scope": "selected_property",
+      "cashCost": 136,
+      "requires": [
+        "loading_1"
+      ],
+      "effect": "Two-crate loading pad",
+      "visualContract": "Two-crate loading pad; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "dispatch_batch",
+        "units": 2,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "loading_3",
+      "branch": "loading",
+      "rank": 3,
+      "scope": "selected_property",
+      "cashCost": 238,
+      "requires": [
+        "loading_2"
+      ],
+      "effect": "Cart handover position",
+      "visualContract": "Cart handover position; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "dispatch_batch",
+        "units": 3,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "loading_4",
+      "branch": "loading",
+      "rank": 4,
+      "scope": "selected_property",
+      "cashCost": 374,
+      "requires": [
+        "loading_3"
+      ],
+      "effect": "Batch order dispatch",
+      "visualContract": "Batch order dispatch; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "dispatch_batch",
+        "units": 5,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "loading_5",
+      "branch": "loading",
+      "rank": 5,
+      "scope": "selected_property",
+      "cashCost": 546,
+      "requires": [
+        "loading_4"
+      ],
+      "effect": "Second vehicle slot",
+      "visualContract": "Second vehicle slot; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "dispatch_batch",
+        "units": 8,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "loading_6",
+      "branch": "loading",
+      "rank": 6,
+      "scope": "selected_property",
+      "cashCost": 752,
+      "requires": [
+        "loading_5"
+      ],
+      "effect": "Coordinated loading yard",
+      "visualContract": "Coordinated loading yard; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "dispatch_batch",
+        "units": 12,
+        "replacesPreviousCapacity": true
+      }
+    },
+    {
+      "id": "training_1",
+      "branch": "training",
+      "rank": 1,
+      "scope": "selected_worker",
+      "cashCost": 65,
+      "requires": [],
+      "effect": "Role induction",
+      "visualContract": "Role induction; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "worker_skill_bonus",
+        "boundedRateBonus": 0.03,
+        "maxBonus": 0.18
+      }
+    },
+    {
+      "id": "training_2",
+      "branch": "training",
+      "rank": 2,
+      "scope": "selected_worker",
+      "cashCost": 127,
+      "requires": [
+        "training_1"
+      ],
+      "effect": "Efficient hand sequence",
+      "visualContract": "Efficient hand sequence; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "worker_skill_bonus",
+        "boundedRateBonus": 0.06,
+        "maxBonus": 0.18
+      }
+    },
+    {
+      "id": "training_3",
+      "branch": "training",
+      "rank": 3,
+      "scope": "selected_worker",
+      "cashCost": 221,
+      "requires": [
+        "training_2"
+      ],
+      "effect": "Secondary task familiarity",
+      "visualContract": "Secondary task familiarity; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "worker_skill_bonus",
+        "boundedRateBonus": 0.09,
+        "maxBonus": 0.18
+      }
+    },
+    {
+      "id": "training_4",
+      "branch": "training",
+      "rank": 4,
+      "scope": "selected_worker",
+      "cashCost": 348,
+      "requires": [
+        "training_3"
+      ],
+      "effect": "Specialist role method",
+      "visualContract": "Specialist role method; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "worker_skill_bonus",
+        "boundedRateBonus": 0.12,
+        "maxBonus": 0.18
+      }
+    },
+    {
+      "id": "training_5",
+      "branch": "training",
+      "rank": 5,
+      "scope": "selected_worker",
+      "cashCost": 507,
+      "requires": [
+        "training_4"
+      ],
+      "effect": "Advanced coordination",
+      "visualContract": "Advanced coordination; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "worker_skill_bonus",
+        "boundedRateBonus": 0.15,
+        "maxBonus": 0.18
+      }
+    },
+    {
+      "id": "training_6",
+      "branch": "training",
+      "rank": 6,
+      "scope": "selected_worker",
+      "cashCost": 699,
+      "requires": [
+        "training_5"
+      ],
+      "effect": "Master role option",
+      "visualContract": "Master role option; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "worker_skill_bonus",
+        "boundedRateBonus": 0.18,
+        "maxBonus": 0.18
+      }
+    },
+    {
+      "id": "research_1",
+      "branch": "research",
+      "rank": 1,
+      "scope": "empire",
+      "cashCost": 150,
+      "requires": [
+        "equipment_1"
+      ],
+      "effect": "Velvet Echo unlocked",
+      "visualContract": "Velvet Echo unlocked; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "research_capability_1",
+        "mustImplementBenefit": "Velvet Echo unlocked"
+      }
+    },
+    {
+      "id": "research_2",
+      "branch": "research",
+      "rank": 2,
+      "scope": "empire",
+      "cashCost": 292,
+      "requires": [
+        "research_1"
+      ],
+      "effect": "Suncoil unlocked",
+      "visualContract": "Suncoil unlocked; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "research_capability_2",
+        "mustImplementBenefit": "Suncoil unlocked"
+      }
+    },
+    {
+      "id": "research_3",
+      "branch": "research",
+      "rank": 3,
+      "scope": "empire",
+      "cashCost": 510,
+      "requires": [
+        "research_2"
+      ],
+      "effect": "Moonfoam unlocked",
+      "visualContract": "Moonfoam unlocked; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "research_capability_3",
+        "mustImplementBenefit": "Moonfoam unlocked"
+      }
+    },
+    {
+      "id": "research_4",
+      "branch": "research",
+      "rank": 4,
+      "scope": "empire",
+      "cashCost": 802,
+      "requires": [
+        "research_3"
+      ],
+      "effect": "Prism Bloom unlocked",
+      "visualContract": "Prism Bloom unlocked; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "research_capability_4",
+        "mustImplementBenefit": "Prism Bloom unlocked"
+      }
+    },
+    {
+      "id": "research_5",
+      "branch": "research",
+      "rank": 5,
+      "scope": "empire",
+      "cashCost": 1170,
+      "requires": [
+        "research_4"
+      ],
+      "effect": "Crown Assembly unlocked",
+      "visualContract": "Crown Assembly unlocked; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "research_capability_5",
+        "mustImplementBenefit": "Crown Assembly unlocked"
+      }
+    },
+    {
+      "id": "research_6",
+      "branch": "research",
+      "rank": 6,
+      "scope": "empire",
+      "cashCost": 1612,
+      "requires": [
+        "research_5"
+      ],
+      "effect": "Alternate specialist product recipes",
+      "visualContract": "Alternate specialist product recipes; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "research_capability_6",
+        "mustImplementBenefit": "Alternate specialist product recipes"
+      }
+    },
+    {
+      "id": "property_1",
+      "branch": "property",
+      "rank": 1,
+      "scope": "empire",
+      "cashCost": 300,
+      "requires": [
+        "equipment_1",
+        "lanes_1"
+      ],
+      "effect": "Adjoining workshop offer",
+      "visualContract": "Adjoining workshop offer; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "property_capability_1",
+        "mustImplementBenefit": "Adjoining workshop offer"
+      }
+    },
+    {
+      "id": "property_2",
+      "branch": "property",
+      "rank": 2,
+      "scope": "empire",
+      "cashCost": 585,
+      "requires": [
+        "property_1"
+      ],
+      "effect": "Converted shop offer",
+      "visualContract": "Converted shop offer; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "property_capability_2",
+        "mustImplementBenefit": "Converted shop offer"
+      }
+    },
+    {
+      "id": "property_3",
+      "branch": "property",
+      "rank": 3,
+      "scope": "empire",
+      "cashCost": 1020,
+      "requires": [
+        "property_2"
+      ],
+      "effect": "Warehouse offer",
+      "visualContract": "Warehouse offer; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "property_capability_3",
+        "mustImplementBenefit": "Warehouse offer"
+      }
+    },
+    {
+      "id": "property_4",
+      "branch": "property",
+      "rank": 4,
+      "scope": "empire",
+      "cashCost": 1605,
+      "requires": [
+        "property_3"
+      ],
+      "effect": "Industrial courtyard offer",
+      "visualContract": "Industrial courtyard offer; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "property_capability_4",
+        "mustImplementBenefit": "Industrial courtyard offer"
+      }
+    },
+    {
+      "id": "property_5",
+      "branch": "property",
+      "rank": 5,
+      "scope": "empire",
+      "cashCost": 2340,
+      "requires": [
+        "property_4"
+      ],
+      "effect": "Headquarters offer",
+      "visualContract": "Headquarters offer; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "property_capability_5",
+        "mustImplementBenefit": "Headquarters offer"
+      }
+    },
+    {
+      "id": "property_6",
+      "branch": "property",
+      "rank": 6,
+      "scope": "empire",
+      "cashCost": 3225,
+      "requires": [
+        "property_5"
+      ],
+      "effect": "Headquarters annex project",
+      "visualContract": "Headquarters annex project; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "property_capability_6",
+        "mustImplementBenefit": "Headquarters annex project"
+      }
+    },
+    {
+      "id": "supervision_1",
+      "branch": "supervision",
+      "rank": 1,
+      "scope": "selected_property",
+      "cashCost": 220,
+      "requires": [
+        "equipment_1"
+      ],
+      "effect": "Stock target rules",
+      "visualContract": "Stock target rules; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "supervision_capability_1",
+        "mustImplementBenefit": "Stock target rules"
+      }
+    },
+    {
+      "id": "supervision_2",
+      "branch": "supervision",
+      "rank": 2,
+      "scope": "selected_property",
+      "cashCost": 429,
+      "requires": [
+        "supervision_1"
+      ],
+      "effect": "Worker assignment presets",
+      "visualContract": "Worker assignment presets; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "supervision_capability_2",
+        "mustImplementBenefit": "Worker assignment presets"
+      }
+    },
+    {
+      "id": "supervision_3",
+      "branch": "supervision",
+      "rank": 3,
+      "scope": "selected_property",
+      "cashCost": 748,
+      "requires": [
+        "supervision_2"
+      ],
+      "effect": "Budgeted auto-restock",
+      "visualContract": "Budgeted auto-restock; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "supervision_capability_3",
+        "mustImplementBenefit": "Budgeted auto-restock"
+      }
+    },
+    {
+      "id": "supervision_4",
+      "branch": "supervision",
+      "rank": 4,
+      "scope": "selected_property",
+      "cashCost": 1177,
+      "requires": [
+        "supervision_3"
+      ],
+      "effect": "Order reservation priorities",
+      "visualContract": "Order reservation priorities; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "supervision_capability_4",
+        "mustImplementBenefit": "Order reservation priorities"
+      }
+    },
+    {
+      "id": "supervision_5",
+      "branch": "supervision",
+      "rank": 5,
+      "scope": "selected_property",
+      "cashCost": 1716,
+      "requires": [
+        "supervision_4"
+      ],
+      "effect": "Cross-property supply targets",
+      "visualContract": "Cross-property supply targets; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "supervision_capability_5",
+        "mustImplementBenefit": "Cross-property supply targets"
+      }
+    },
+    {
+      "id": "supervision_6",
+      "branch": "supervision",
+      "rank": 6,
+      "scope": "selected_property",
+      "cashCost": 2365,
+      "requires": [
+        "supervision_5"
+      ],
+      "effect": "Exception summary and focus controls",
+      "visualContract": "Exception summary and focus controls; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "supervision_capability_6",
+        "mustImplementBenefit": "Exception summary and focus controls"
+      }
+    },
+    {
+      "id": "comfort_1",
+      "branch": "comfort",
+      "rank": 1,
+      "scope": "selected_property",
+      "cashCost": 35,
+      "requires": [],
+      "effect": "Comfortable stools",
+      "visualContract": "Comfortable stools; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "comfort_capability_1",
+        "mustImplementBenefit": "Comfortable stools"
+      }
+    },
+    {
+      "id": "comfort_2",
+      "branch": "comfort",
+      "rank": 2,
+      "scope": "selected_property",
+      "cashCost": 68,
+      "requires": [
+        "comfort_1"
+      ],
+      "effect": "Water and break corner",
+      "visualContract": "Water and break corner; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "comfort_capability_2",
+        "mustImplementBenefit": "Water and break corner"
+      }
+    },
+    {
+      "id": "comfort_3",
+      "branch": "comfort",
+      "rank": 3,
+      "scope": "selected_property",
+      "cashCost": 119,
+      "requires": [
+        "comfort_2"
+      ],
+      "effect": "Warm staff room",
+      "visualContract": "Warm staff room; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "comfort_capability_3",
+        "mustImplementBenefit": "Warm staff room"
+      }
+    },
+    {
+      "id": "comfort_4",
+      "branch": "comfort",
+      "rank": 4,
+      "scope": "selected_property",
+      "cashCost": 187,
+      "requires": [
+        "comfort_3"
+      ],
+      "effect": "Personal lockers",
+      "visualContract": "Personal lockers; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "comfort_capability_4",
+        "mustImplementBenefit": "Personal lockers"
+      }
+    },
+    {
+      "id": "comfort_5",
+      "branch": "comfort",
+      "rank": 5,
+      "scope": "selected_property",
+      "cashCost": 273,
+      "requires": [
+        "comfort_4"
+      ],
+      "effect": "Shared activity space",
+      "visualContract": "Shared activity space; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "comfort_capability_5",
+        "mustImplementBenefit": "Shared activity space"
+      }
+    },
+    {
+      "id": "comfort_6",
+      "branch": "comfort",
+      "rank": 6,
+      "scope": "selected_property",
+      "cashCost": 376,
+      "requires": [
+        "comfort_5"
+      ],
+      "effect": "Customised staff lounge",
+      "visualContract": "Customised staff lounge; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "comfort_capability_6",
+        "mustImplementBenefit": "Customised staff lounge"
+      }
+    },
+    {
+      "id": "defence_1",
+      "branch": "defence",
+      "rank": 1,
+      "scope": "selected_property",
+      "cashCost": 160,
+      "requires": [
+        "property_2"
+      ],
+      "effect": "Warning board and safe zone",
+      "visualContract": "Warning board and safe zone; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "defence_capability_1",
+        "mustImplementBenefit": "Warning board and safe zone"
+      }
+    },
+    {
+      "id": "defence_2",
+      "branch": "defence",
+      "rank": 2,
+      "scope": "selected_property",
+      "cashCost": 312,
+      "requires": [
+        "defence_1"
+      ],
+      "effect": "Guard position",
+      "visualContract": "Guard position; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "defence_capability_2",
+        "mustImplementBenefit": "Guard position"
+      }
+    },
+    {
+      "id": "defence_3",
+      "branch": "defence",
+      "rank": 3,
+      "scope": "selected_property",
+      "cashCost": 544,
+      "requires": [
+        "defence_2"
+      ],
+      "effect": "Reinforced game shutters",
+      "visualContract": "Reinforced game shutters; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "defence_capability_3",
+        "mustImplementBenefit": "Reinforced game shutters"
+      }
+    },
+    {
+      "id": "defence_4",
+      "branch": "defence",
+      "rank": 4,
+      "scope": "selected_property",
+      "cashCost": 856,
+      "requires": [
+        "defence_3"
+      ],
+      "effect": "Event cargo protection fixture",
+      "visualContract": "Event cargo protection fixture; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "defence_capability_4",
+        "mustImplementBenefit": "Event cargo protection fixture"
+      }
+    },
+    {
+      "id": "defence_5",
+      "branch": "defence",
+      "rank": 5,
+      "scope": "selected_property",
+      "cashCost": 1248,
+      "requires": [
+        "defence_4"
+      ],
+      "effect": "Second guard position",
+      "visualContract": "Second guard position; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "defence_capability_5",
+        "mustImplementBenefit": "Second guard position"
+      }
+    },
+    {
+      "id": "defence_6",
+      "branch": "defence",
+      "rank": 6,
+      "scope": "selected_property",
+      "cashCost": 1720,
+      "requires": [
+        "defence_5"
+      ],
+      "effect": "Coordinated defence scenario option",
+      "visualContract": "Coordinated defence scenario option; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "defence_capability_6",
+        "mustImplementBenefit": "Coordinated defence scenario option"
+      }
+    },
+    {
+      "id": "civic_1",
+      "branch": "civic",
+      "rank": 1,
+      "scope": "empire",
+      "cashCost": 200,
+      "requires": [
+        "property_2"
+      ],
+      "effect": "Heat explanation and event preview",
+      "visualContract": "Heat explanation and event preview; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "civic_capability_1",
+        "mustImplementBenefit": "Heat explanation and event preview"
+      }
+    },
+    {
+      "id": "civic_2",
+      "branch": "civic",
+      "rank": 2,
+      "scope": "empire",
+      "cashCost": 390,
+      "requires": [
+        "civic_1"
+      ],
+      "effect": "Civic-resolution story board",
+      "visualContract": "Civic-resolution story board; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "civic_capability_2",
+        "mustImplementBenefit": "Civic-resolution story board"
+      }
+    },
+    {
+      "id": "civic_3",
+      "branch": "civic",
+      "rank": 3,
+      "scope": "empire",
+      "cashCost": 680,
+      "requires": [
+        "civic_2"
+      ],
+      "effect": "Recovery event options",
+      "visualContract": "Recovery event options; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "civic_capability_3",
+        "mustImplementBenefit": "Recovery event options"
+      }
+    },
+    {
+      "id": "civic_4",
+      "branch": "civic",
+      "rank": 4,
+      "scope": "empire",
+      "cashCost": 1070,
+      "requires": [
+        "civic_3"
+      ],
+      "effect": "Improved consequence preview",
+      "visualContract": "Improved consequence preview; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "civic_capability_4",
+        "mustImplementBenefit": "Improved consequence preview"
+      }
+    },
+    {
+      "id": "civic_5",
+      "branch": "civic",
+      "rank": 5,
+      "scope": "empire",
+      "cashCost": 1560,
+      "requires": [
+        "civic_4"
+      ],
+      "effect": "Additional recovery story route",
+      "visualContract": "Additional recovery story route; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "civic_capability_5",
+        "mustImplementBenefit": "Additional recovery story route"
+      }
+    },
+    {
+      "id": "civic_6",
+      "branch": "civic",
+      "rank": 6,
+      "scope": "empire",
+      "cashCost": 2150,
+      "requires": [
+        "civic_5"
+      ],
+      "effect": "Chapter-capped setback relief capability",
+      "visualContract": "Chapter-capped setback relief capability; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "civic_capability_6",
+        "mustImplementBenefit": "Chapter-capped setback relief capability"
+      }
+    },
+    {
+      "id": "capers_1",
+      "branch": "capers",
+      "rank": 1,
+      "scope": "empire",
+      "cashCost": 600,
+      "requires": [
+        "property_3",
+        "supervision_1"
+      ],
+      "effect": "Caper board and first mission",
+      "visualContract": "Caper board and first mission; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "capers_capability_1",
+        "mustImplementBenefit": "Caper board and first mission"
+      }
+    },
+    {
+      "id": "capers_2",
+      "branch": "capers",
+      "rank": 2,
+      "scope": "empire",
+      "cashCost": 1170,
+      "requires": [
+        "capers_1"
+      ],
+      "effect": "Crew equipment lockers",
+      "visualContract": "Crew equipment lockers; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "capers_capability_2",
+        "mustImplementBenefit": "Crew equipment lockers"
+      }
+    },
+    {
+      "id": "capers_3",
+      "branch": "capers",
+      "rank": 3,
+      "scope": "empire",
+      "cashCost": 2040,
+      "requires": [
+        "capers_2"
+      ],
+      "effect": "Two-person mission team",
+      "visualContract": "Two-person mission team; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "capers_capability_3",
+        "mustImplementBenefit": "Two-person mission team"
+      }
+    },
+    {
+      "id": "capers_4",
+      "branch": "capers",
+      "rank": 4,
+      "scope": "empire",
+      "cashCost": 3210,
+      "requires": [
+        "capers_3"
+      ],
+      "effect": "Advanced staging room",
+      "visualContract": "Advanced staging room; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "capers_capability_4",
+        "mustImplementBenefit": "Advanced staging room"
+      }
+    },
+    {
+      "id": "capers_5",
+      "branch": "capers",
+      "rank": 5,
+      "scope": "empire",
+      "cashCost": 4680,
+      "requires": [
+        "capers_4"
+      ],
+      "effect": "Specialist mission options",
+      "visualContract": "Specialist mission options; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "capers_capability_5",
+        "mustImplementBenefit": "Specialist mission options"
+      }
+    },
+    {
+      "id": "capers_6",
+      "branch": "capers",
+      "rank": 6,
+      "scope": "empire",
+      "cashCost": 6450,
+      "requires": [
+        "capers_5"
+      ],
+      "effect": "Big Handover preparation",
+      "visualContract": "Big Handover preparation; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "capers_capability_6",
+        "mustImplementBenefit": "Big Handover preparation"
+      }
+    },
+    {
+      "id": "presentation_1",
+      "branch": "presentation",
+      "rank": 1,
+      "scope": "selected_property",
+      "cashCost": 25,
+      "requires": [],
+      "effect": "Clean floor and wall repair",
+      "visualContract": "Clean floor and wall repair; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "presentation_capability_1",
+        "mustImplementBenefit": "Clean floor and wall repair"
+      }
+    },
+    {
+      "id": "presentation_2",
+      "branch": "presentation",
+      "rank": 2,
+      "scope": "selected_property",
+      "cashCost": 49,
+      "requires": [
+        "presentation_1"
+      ],
+      "effect": "New signage",
+      "visualContract": "New signage; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "presentation_capability_2",
+        "mustImplementBenefit": "New signage"
+      }
+    },
+    {
+      "id": "presentation_3",
+      "branch": "presentation",
+      "rank": 3,
+      "scope": "selected_property",
+      "cashCost": 85,
+      "requires": [
+        "presentation_2"
+      ],
+      "effect": "Product display shelf",
+      "visualContract": "Product display shelf; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "presentation_capability_3",
+        "mustImplementBenefit": "Product display shelf"
+      }
+    },
+    {
+      "id": "presentation_4",
+      "branch": "presentation",
+      "rank": 4,
+      "scope": "selected_property",
+      "cashCost": 134,
+      "requires": [
+        "presentation_3"
+      ],
+      "effect": "Custom lighting",
+      "visualContract": "Custom lighting; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "presentation_capability_4",
+        "mustImplementBenefit": "Custom lighting"
+      }
+    },
+    {
+      "id": "presentation_5",
+      "branch": "presentation",
+      "rank": 5,
+      "scope": "selected_property",
+      "cashCost": 195,
+      "requires": [
+        "presentation_4"
+      ],
+      "effect": "Personal trophy display",
+      "visualContract": "Personal trophy display; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "presentation_capability_5",
+        "mustImplementBenefit": "Personal trophy display"
+      }
+    },
+    {
+      "id": "presentation_6",
+      "branch": "presentation",
+      "rank": 6,
+      "scope": "selected_property",
+      "cashCost": 269,
+      "requires": [
+        "presentation_5"
+      ],
+      "effect": "Full facade customisation",
+      "visualContract": "Full facade customisation; bespoke visible change required, described in upgrade acceptance sheet",
+      "runtimeArtStatus": "required_not_supplied",
+      "mechanic": {
+        "kind": "capability_unlock",
+        "capabilityId": "presentation_capability_6",
+        "mustImplementBenefit": "Full facade customisation"
+      }
+    }
+  ]
+}

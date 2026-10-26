@@ -1,0 +1,160 @@
+{
+  "at": "2026-10-26T17:32:06.335Z",
+  "results": [
+    {
+      "name": "new game starts with $20 and 12+12 prepaid stock",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "keyboard walking moves the player",
+      "ok": true,
+      "detail": "x 6.50 → 7.42"
+    },
+    {
+      "name": "action button offers \"Take blank\" at the shelf",
+      "ok": true,
+      "detail": "Take blank"
+    },
+    {
+      "name": "pressing action picks up a real blank token",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "holding Form at the bench produces exactly one prepared piece",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "first hand-made sale pays $12 on settlement",
+      "ok": true,
+      "detail": "cash $32"
+    },
+    {
+      "name": "manual loop reaches $60 with a clean ledger/conservation audit",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "hire button creates a named worker walking in from the street door",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mina occupies the forming position and is doing a real job",
+      "ok": true,
+      "detail": "job j52"
+    },
+    {
+      "name": "packing speed offer shows the real formula preview 8.0s → 6.96s",
+      "ok": true,
+      "detail": "Upgrade packing speed$45 8.0s → 6.96s per package · Faster fold and press cycle"
+    },
+    {
+      "name": "speed upgrade applied once (one tap)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "packer hired at packing position 1",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bundle builds a physical second table and staffs it",
+      "ok": true,
+      "detail": "earned to $258, now $12, toasts: Rook is on the way in — they'll take over packing."
+    },
+    {
+      "name": "line overview explains the forming bottleneck in plain words",
+      "ok": true,
+      "detail": "Staffed: forming, packing. You still handle handover yourself."
+    },
+    {
+      "name": "sleeve dispenser installed (equipment tier 1)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "second forming position built and staffed (bottleneck fix)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "output keeps flowing after the fix",
+      "ok": true,
+      "detail": "11 packages in 60s"
+    },
+    {
+      "name": "adjoining workshop unlocked through its real requirements",
+      "ok": false,
+      "detail": "orders 100"
+    },
+    {
+      "name": "workshop positions staffed by real workers",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "integrity audit clean after the full slice",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "after a page reload the stored save holds every in-progress job at its exact progress, plus cash and staff",
+      "ok": true,
+      "detail": "4 jobs, $324, 4 workers"
+    },
+    {
+      "name": "Continue resumes those jobs from where they were (no reset, no duplicate)",
+      "ok": true,
+      "detail": "[[\"j2080\",0.4539473684210519],[\"j2082\",0.524561403508771],[\"j2083\",0.3333333333333333],[\"j2084\",0.6388888888888876]]"
+    },
+    {
+      "name": "recovery fixture: no cash and no blank stock",
+      "ok": true,
+      "detail": "{\"cash\":0,\"blanks\":0}"
+    },
+    {
+      "name": "street door offers the no-input errand",
+      "ok": true,
+      "detail": "Run errand +$8"
+    },
+    {
+      "name": "errand returns the player with $8",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "restock with errand money restores production",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "667×375: panel fits, offers ≥48px, HUD not overlapping, no horizontal scroll",
+      "ok": true,
+      "detail": "{\"vw\":667,\"vh\":375,\"panel\":{\"l\":299,\"r\":659,\"t\":52,\"b\":367},\"minOffer\":78,\"offers\":4,\"overlap\":false,\"act\":52,\"hudRight\":659,\"hscroll\":false}"
+    },
+    {
+      "name": "844×390: panel fits, offers ≥48px, HUD not overlapping, no horizontal scroll",
+      "ok": true,
+      "detail": "{\"vw\":844,\"vh\":390,\"panel\":{\"l\":476,\"r\":836,\"t\":52,\"b\":382},\"minOffer\":78,\"offers\":4,\"overlap\":false,\"act\":52,\"hudRight\":836,\"hscroll\":false}"
+    },
+    {
+      "name": "932×430: panel fits, offers ≥48px, HUD not overlapping, no horizontal scroll",
+      "ok": true,
+      "detail": "{\"vw\":932,\"vh\":430,\"panel\":{\"l\":544,\"r\":924,\"t\":52,\"b\":422},\"minOffer\":81,\"offers\":4,\"overlap\":false,\"act\":52,\"hudRight\":924,\"hscroll\":false}"
+    },
+    {
+      "name": "1280×720: panel fits, offers ≥48px, HUD not overlapping, no horizontal scroll",
+      "ok": true,
+      "detail": "{\"vw\":1280,\"vh\":720,\"panel\":{\"l\":892,\"r\":1272,\"t\":52,\"b\":712},\"minOffer\":81,\"offers\":4,\"overlap\":false,\"act\":52,\"hudRight\":1272,\"hscroll\":false}"
+    },
+    {
+      "name": "no page errors or console errors",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}

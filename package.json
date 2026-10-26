@@ -1,0 +1,26 @@
+{
+  "name": "backroom-empire",
+  "private": true,
+  "version": "0.1.0",
+  "description": "BACKROOM EMPIRE — hands-on pixel-art tycoon for landscape iPhone and desktop browsers.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "validate:content": "vitest run tests/content.test.ts && python3 -I design/backroom-empire/tools/validate_pack.py",
+    "test:browser": "node scripts/browser-check.mjs",
+    "check": "npm run typecheck && npm run test && npm run validate:content"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "typescript": "5.7.3",
+    "vite": "6.4.5",
+    "vitest": "3.2.7"
+  },
+  "dependencies": {
+    "phaser": "4.2.1"
+  }
+}

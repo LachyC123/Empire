@@ -1,0 +1,53 @@
+{
+  "status": "proposed_not_playtested",
+  "resources": [
+    "cash",
+    "blank_stock",
+    "sleeve",
+    "soft_stock",
+    "box",
+    "coil_blank",
+    "case",
+    "foam_token",
+    "light_seed",
+    "carton",
+    "parts",
+    "fibre"
+  ],
+  "startingCash": 20,
+  "startingInventory": {
+    "blank_stock": 12,
+    "sleeve": 12
+  },
+  "purchasePrices": {
+    "blank_stock": 4,
+    "sleeve": 1,
+    "soft_stock": 6,
+    "box": 2,
+    "coil_blank": 9,
+    "case": 3,
+    "foam_token": 8,
+    "light_seed": 12,
+    "carton": 4,
+    "parts": 10,
+    "fibre": 3
+  },
+  "firstAssemblerHireCost": 60,
+  "commissionPerCompletedTask": {
+    "assembler": 1,
+    "packer": 1
+  },
+  "basicSale": 12,
+  "manualSeconds": {
+    "form": 6,
+    "pack": 8,
+    "handover": 2
+  },
+  "recoveryErrand": {
+    "inputCost": 0,
+    "activeSeconds": 20,
+    "rewardCash": 8
+  },
+  "offlineProgression": false,
+  "wageModel": "commission_reserved_once_at_job_start; no_additional_hourly_salary"
+}

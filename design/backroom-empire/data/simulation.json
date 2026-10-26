@@ -1,0 +1,35 @@
+{
+  "tickSource": "active_simulation",
+  "basePackagingSeconds": 8,
+  "packagingSpeedStep": 0.15,
+  "minPackagingSeconds": 1.2,
+  "baseAssemblySeconds": 6,
+  "baseHandoverSeconds": 2,
+  "maxTasksPerWorker": 1,
+  "maxWorkersPerLane": 1,
+  "hireNeedsValidLane": true,
+  "jobs": [
+    "proposed",
+    "reserved",
+    "collecting",
+    "travelling",
+    "working",
+    "delivering",
+    "completed",
+    "blocked",
+    "cancelled"
+  ],
+  "events": [
+    "HireCommitted",
+    "UpgradeCommitted",
+    "JobReserved",
+    "JobCompleted",
+    "BatchTransferred",
+    "OrderSettled",
+    "ThreatStarted",
+    "ThreatSettled",
+    "CaperSettled"
+  ],
+  "progressOnSpeedUpgrade": "preserve_normalised_progress; change_remaining_rate",
+  "scopeNote": "Examples are contracts, not installed game code."
+}

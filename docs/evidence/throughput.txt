@@ -1,0 +1,6 @@
+Finished packages per minute over 5 simulated minutes, same seed, stock kept topped up, player idle
+  5.8/min  1 assembler + 1 packer + counter hand
+  6.4/min  + packing speed 1 (8.0s → 6.96s)
+  7.0/min  + second packing table, staffed
+ 12.2/min  + second forming position, staffed
+ 12.6/min  + sleeve dispenser (equipment 1)

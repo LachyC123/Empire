@@ -1,0 +1,89 @@
+{
+  "capers": [
+    {
+      "id": "wrong_van",
+      "name": "The Wrong Van",
+      "unlock": "capers_1",
+      "rewardBlueprintFor": "loading_2",
+      "durationTargetSeconds": [
+        180,
+        420
+      ],
+      "maxNPCCompanions": 2,
+      "fictionalArcadeMechanicsOnly": true,
+      "firstRewardUnique": true,
+      "coreTycoonCanContinueWithoutIt": true
+    },
+    {
+      "id": "night_auction",
+      "name": "The Night Auction",
+      "unlock": "capers_2",
+      "rewardBlueprintFor": "presentation_3",
+      "durationTargetSeconds": [
+        180,
+        420
+      ],
+      "maxNPCCompanions": 2,
+      "fictionalArcadeMechanicsOnly": true,
+      "firstRewardUnique": true,
+      "coreTycoonCanContinueWithoutIt": true
+    },
+    {
+      "id": "skyline_switch",
+      "name": "The Skyline Switch",
+      "unlock": "capers_3",
+      "rewardBlueprintFor": "carrying_4",
+      "durationTargetSeconds": [
+        180,
+        420
+      ],
+      "maxNPCCompanions": 2,
+      "fictionalArcadeMechanicsOnly": true,
+      "firstRewardUnique": true,
+      "coreTycoonCanContinueWithoutIt": true
+    },
+    {
+      "id": "moving_showroom",
+      "name": "The Moving Showroom",
+      "unlock": "capers_4",
+      "rewardBlueprintFor": "loading_4",
+      "durationTargetSeconds": [
+        180,
+        420
+      ],
+      "maxNPCCompanions": 2,
+      "fictionalArcadeMechanicsOnly": true,
+      "firstRewardUnique": true,
+      "coreTycoonCanContinueWithoutIt": true
+    },
+    {
+      "id": "glass_palace",
+      "name": "The Glass Palace",
+      "unlock": "capers_5",
+      "rewardBlueprintFor": "equipment_5",
+      "durationTargetSeconds": [
+        180,
+        420
+      ],
+      "maxNPCCompanions": 2,
+      "fictionalArcadeMechanicsOnly": true,
+      "firstRewardUnique": true,
+      "coreTycoonCanContinueWithoutIt": true
+    },
+    {
+      "id": "big_handover",
+      "name": "The Big Handover",
+      "unlock": "capers_6",
+      "rewardBlueprintFor": "property_6",
+      "durationTargetSeconds": [
+        180,
+        420
+      ],
+      "maxNPCCompanions": 2,
+      "fictionalArcadeMechanicsOnly": true,
+      "firstRewardUnique": true,
+      "coreTycoonCanContinueWithoutIt": true
+    }
+  ],
+  "rewardPolicy": "Blueprint opens alternate discounted/cosmetic route, not a mandatory exclusive gate; ordinary upgrade route stays available. Never double-apply existing unlock."
+}

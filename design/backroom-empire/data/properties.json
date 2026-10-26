@@ -1,0 +1,47 @@
+{
+  "properties": [
+    {
+      "id": "backroom",
+      "name": "Original backroom",
+      "unlock": null,
+      "baseWorkerPositions": 2,
+      "purpose": "Manual start and first hire"
+    },
+    {
+      "id": "annex",
+      "name": "Adjoining workshop",
+      "unlock": "property_1",
+      "baseWorkerPositions": 5,
+      "purpose": "Second room and logistics"
+    },
+    {
+      "id": "shop",
+      "name": "Converted shop",
+      "unlock": "property_2",
+      "baseWorkerPositions": 8,
+      "purpose": "Visible customers and stockroom"
+    },
+    {
+      "id": "warehouse",
+      "name": "Warehouse",
+      "unlock": "property_3",
+      "baseWorkerPositions": 14,
+      "purpose": "Multiple lines and loading"
+    },
+    {
+      "id": "courtyard",
+      "name": "Industrial courtyard",
+      "unlock": "property_4",
+      "baseWorkerPositions": 20,
+      "purpose": "Specialist premises and staging"
+    },
+    {
+      "id": "headquarters",
+      "name": "Headquarters complex",
+      "unlock": "property_5",
+      "baseWorkerPositions": 28,
+      "purpose": "Organisation and late capers"
+    }
+  ],
+  "purchasePolicy": "Property branch purchase grants the corresponding premises/access; do not charge a second undisclosed property price. Footprint still constrains actual positions."
+}
